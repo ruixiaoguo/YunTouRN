@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2122C88A21522AC700571301 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122C88921522AC700571301 /* AppDelegate.swift */; };
+		2122C88C21522AC700571301 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122C88B21522AC700571301 /* ViewController.swift */; };
+		2122C88F21522AC700571301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2122C88D21522AC700571301 /* Main.storyboard */; };
+		2122C89121522AC800571301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2122C89021522AC800571301 /* Assets.xcassets */; };
+		2122C89421522AC800571301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2122C89221522AC800571301 /* LaunchScreen.storyboard */; };
+		2122C89C21522D1E00571301 /* RNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122C89B21522D1E00571301 /* RNViewController.swift */; };
+		2122C8A321523F1800571301 /* RNBridgeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2122C8A221523F1800571301 /* RNBridgeModule.swift */; };
+		2122C8A72152423B00571301 /* Bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2122C8A62152423B00571301 /* Bridge.m */; };
+		A2165E078D5868FF507CE053 /* Pods_YunTou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7713C9C64EE88A015C87AF9 /* Pods_YunTou.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2122C88621522AC700571301 /* YunTou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YunTou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2122C88921522AC700571301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2122C88B21522AC700571301 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2122C88E21522AC700571301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2122C89021522AC800571301 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2122C89321522AC800571301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2122C89521522AC800571301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2122C89B21522D1E00571301 /* RNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNViewController.swift; sourceTree = "<group>"; };
+		2122C89D2152376B00571301 /* YunTou-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YunTou-Bridging-Header.h"; sourceTree = "<group>"; };
+		2122C8A221523F1800571301 /* RNBridgeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNBridgeModule.swift; sourceTree = "<group>"; };
+		2122C8A62152423B00571301 /* Bridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bridge.m; sourceTree = "<group>"; };
+		7D1B64E2C63AE211340C5318 /* Pods-YunTou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunTou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YunTou/Pods-YunTou.debug.xcconfig"; sourceTree = "<group>"; };
+		8FD73DBCE49A8A854CF90296 /* Pods-YunTou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunTou.release.xcconfig"; path = "Pods/Target Support Files/Pods-YunTou/Pods-YunTou.release.xcconfig"; sourceTree = "<group>"; };
+		D7713C9C64EE88A015C87AF9 /* Pods_YunTou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YunTou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2122C88321522AC700571301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2165E078D5868FF507CE053 /* Pods_YunTou.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F09973780D7BC05AA9EA82E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7713C9C64EE88A015C87AF9 /* Pods_YunTou.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2122C87D21522AC700571301 = {
+			isa = PBXGroup;
+			children = (
+				2122C88821522AC700571301 /* YunTou */,
+				2122C88721522AC700571301 /* Products */,
+				A3044CAFE35C784DE7799474 /* Pods */,
+				0F09973780D7BC05AA9EA82E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2122C88721522AC700571301 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2122C88621522AC700571301 /* YunTou.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2122C88821522AC700571301 /* YunTou */ = {
+			isa = PBXGroup;
+			children = (
+				2122C8A121523EFF00571301 /* RNBridgeModule */,
+				2122C88921522AC700571301 /* AppDelegate.swift */,
+				2122C88B21522AC700571301 /* ViewController.swift */,
+				2122C89B21522D1E00571301 /* RNViewController.swift */,
+				2122C88D21522AC700571301 /* Main.storyboard */,
+				2122C89021522AC800571301 /* Assets.xcassets */,
+				2122C89221522AC800571301 /* LaunchScreen.storyboard */,
+				2122C89521522AC800571301 /* Info.plist */,
+				2122C89D2152376B00571301 /* YunTou-Bridging-Header.h */,
+			);
+			path = YunTou;
+			sourceTree = "<group>";
+		};
+		2122C8A121523EFF00571301 /* RNBridgeModule */ = {
+			isa = PBXGroup;
+			children = (
+				2122C8A221523F1800571301 /* RNBridgeModule.swift */,
+				2122C8A62152423B00571301 /* Bridge.m */,
+			);
+			path = RNBridgeModule;
+			sourceTree = "<group>";
+		};
+		A3044CAFE35C784DE7799474 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D1B64E2C63AE211340C5318 /* Pods-YunTou.debug.xcconfig */,
+				8FD73DBCE49A8A854CF90296 /* Pods-YunTou.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2122C88521522AC700571301 /* YunTou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2122C89821522AC800571301 /* Build configuration list for PBXNativeTarget "YunTou" */;
+			buildPhases = (
+				B69D53FDF430EE0006523B94 /* [CP] Check Pods Manifest.lock */,
+				2122C88221522AC700571301 /* Sources */,
+				2122C88321522AC700571301 /* Frameworks */,
+				2122C88421522AC700571301 /* Resources */,
+				2BA83B6C96E8CE288F31150D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YunTou;
+			productName = YunTou;
+			productReference = 2122C88621522AC700571301 /* YunTou.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2122C87E21522AC700571301 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = grx;
+				TargetAttributes = {
+					2122C88521522AC700571301 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 2122C88121522AC700571301 /* Build configuration list for PBXProject "YunTou" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2122C87D21522AC700571301;
+			productRefGroup = 2122C88721522AC700571301 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2122C88521522AC700571301 /* YunTou */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2122C88421522AC700571301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2122C89421522AC800571301 /* LaunchScreen.storyboard in Resources */,
+				2122C89121522AC800571301 /* Assets.xcassets in Resources */,
+				2122C88F21522AC700571301 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BA83B6C96E8CE288F31150D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YunTou/Pods-YunTou-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RNVectorIcons/RNVectorIcons.framework",
+				"${BUILT_PRODUCTS_DIR}/React/React.framework",
+				"${BUILT_PRODUCTS_DIR}/yoga/yoga.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNVectorIcons.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YunTou/Pods-YunTou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B69D53FDF430EE0006523B94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YunTou-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2122C88221522AC700571301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2122C89C21522D1E00571301 /* RNViewController.swift in Sources */,
+				2122C88C21522AC700571301 /* ViewController.swift in Sources */,
+				2122C8A72152423B00571301 /* Bridge.m in Sources */,
+				2122C8A321523F1800571301 /* RNBridgeModule.swift in Sources */,
+				2122C88A21522AC700571301 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2122C88D21522AC700571301 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2122C88E21522AC700571301 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2122C89221522AC800571301 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2122C89321522AC800571301 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2122C89621522AC800571301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2122C89721522AC800571301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2122C89921522AC800571301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D1B64E2C63AE211340C5318 /* Pods-YunTou.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35HG47YK45;
+				INFOPLIST_FILE = YunTou/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fh.YunTou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YunTou/YunTou-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2122C89A21522AC800571301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD73DBCE49A8A854CF90296 /* Pods-YunTou.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35HG47YK45;
+				INFOPLIST_FILE = YunTou/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fh.YunTou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YunTou/YunTou-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2122C88121522AC700571301 /* Build configuration list for PBXProject "YunTou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2122C89621522AC800571301 /* Debug */,
+				2122C89721522AC800571301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2122C89821522AC800571301 /* Build configuration list for PBXNativeTarget "YunTou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2122C89921522AC800571301 /* Debug */,
+				2122C89A21522AC800571301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2122C87E21522AC700571301 /* Project object */;
+}

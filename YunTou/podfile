@@ -1,0 +1,92 @@
+# Uncomment the next line to define a global platform for your project
+  platform :ios, '9.0'
+# Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  use_frameworks!
+
+target 'YunTou' do
+  
+    # Pods for RNTest
+    #***********************************************************************#
+   
+    # 'node_modules'目录一般位于根目录中
+    # 但是如果你的结构不同，那你就要根据实际路径修改下面的`:path`
+    pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'RCTText',
+    'RCTImage',
+    'RCTActionSheet',
+    'RCTGeolocation',
+    'RCTNetwork',
+    'RCTSettings',
+    'RCTVibration',
+    'BatchedBridge',
+    'RCTWebSocket',
+    'ART',
+    'RCTAnimation',
+    'RCTBlob',
+    'RCTCameraRoll',
+    'RCTPushNotification',
+    'RCTLinkingIOS',
+    'DevSupport'
+    # 在这里继续添加你所需要的模块
+    ]
+
+    # 如果你的RN版本 >= 0.42.0，请加入下面这行
+    pod "yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
+    
+    #***********************************************************************#
+
+    pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+end
+
+def fix_unused_yoga_headers
+    filepath = './Pods/Target Support Files/yoga/yoga-umbrella.h'
+
+    contents = []
+
+    file = File.open(filepath, 'r')
+    file.each_line do | line |
+        contents << line
+    end
+    file.close
+
+    if contents[12].include? "Utils.h"
+        contents.delete_at(15) # #import "YGNode.h"
+        contents.delete_at(15) # #import "YGNodePrint.h"
+        contents.delete_at(15) # #import "Yoga-internal.h"
+        contents.delete_at(12) # #import "Utils.h"
+
+        file = File.open(filepath, 'w') do |f|
+            f.puts(contents)
+        end
+    end
+end
+
+def react_native_fix
+    fix_unused_yoga_headers
+end
+
+post_install do |installer|
+    react_native_fix
+
+    # Fix react-native-config Bug: 'GeneratedDotEnv.m' file not found
+    installer.pods_project.targets.each do |target|
+        if target.name == 'react-native-config'
+            phase = target.project.new(Xcodeproj::Project::Object::PBXShellScriptBuildPhase)
+            phase.shell_script = "cd ../../"\
+            " && RNC_ROOT=./node_modules/react-native-config/"\
+            " && export SYMROOT=$RNC_ROOT/ios/ReactNativeConfig"\
+            " && export BUILD_DIR=$RNC_ROOT/ios/ReactNativeConfig"\
+            " && ruby $RNC_ROOT/ios/ReactNativeConfig/BuildDotenvConfig.ruby"
+
+            target.build_phases << phase
+            target.build_phases.move(phase,0)
+        end
+    end
+
+    installer.pods_project.build_configuration_list.build_configurations.each do |configuration|
+             configuration.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+    end
+
+end

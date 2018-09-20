@@ -1,0 +1,6 @@
+framework module Pods_YunTou {
+  umbrella header "Pods-YunTou-umbrella.h"
+
+  export *
+  module * { export * }
+}
